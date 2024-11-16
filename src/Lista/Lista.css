@@ -1,0 +1,216 @@
+.todo-container {
+    min-height: 100vh;
+    background-color: rgb(17, 24, 39);
+    padding: 2rem;
+}
+
+.todo-wrapper {
+    max-width: 56rem;
+    margin: 0 auto;
+    background-color: rgb(31, 41, 55);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.todo-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-strip {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    color: white;
+}
+
+.calendar-day.active {
+    background-color: rgb(37, 99, 235);
+}
+
+.calendar-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.calendar-month {
+    font-size: 0.75rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.section-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
+}
+
+.todo-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.375rem;
+    border: 2px solid rgb(37, 99, 235);
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.todo-checkbox:checked {
+    background-color: rgb(37, 99, 235);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.notes-grid {
+    display: grid;
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.main-note {
+    background-color: rgba(37, 99, 235, 0.5);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    color: white;
+}
+
+.small-notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.small-note {
+    background-color: rgba(37, 99, 235, 0.5);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.input-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 0.875rem;
+}
+
+.text-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: rgb(37, 99, 235);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.select-input {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 0.875rem;
+}
+
+.select-input:focus {
+    outline: none;
+    border-color: rgb(37, 99, 235);
+}
+
+.add-button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(37, 99, 235);
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: rgb(29, 78, 216);
+}
+
+.add-button:active {
+    background-color: rgb(30, 64, 175);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.action-button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(37, 99, 235);
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.action-button:hover {
+    background-color: rgb(29, 78, 216);
+    transform: scale(1.05);
+}
+
+.action-button:active {
+    background-color: rgb(30, 64, 175);
+    transform: scale(0.95);
+}
+
+
